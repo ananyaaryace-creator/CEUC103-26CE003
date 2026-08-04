@@ -33,6 +33,6 @@ int main()/*Just the formatted version of 2.1 practical*/
     cout<<left<<setw(25)<<"Branch"<<right<<setw(2)<<":"<<branch<<"\n";
     cout<<left<<setw(25)<<"Semester"<<right<<setw(2)<<":"<<sem<<"\n";
     cout<<left<<setw(25)<<"Mobile Number"<<right<<setw(2)<<":"<<mob_number<<"\n";
-
+    return 0;
 
 }
