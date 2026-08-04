@@ -32,6 +32,6 @@ int main()/*If the code runs sucessfully it displays 0.If not it displays any no
     cout<<"Branch:"<<branch<<"\n";
     cout<<"Semester:"<<sem<<"\n";
     cout<<"Mobile Number:"<<mob_number<<"\n";
-
+    return 0;
 
 }
