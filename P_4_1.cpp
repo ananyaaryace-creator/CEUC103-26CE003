@@ -73,4 +73,5 @@ int main()
         cout<<left<<setw(13)<<"RESULT"<<right<<setw(2)<<"FAIL"<<"\n";
         cout<<"You have failed";
     }
+    return 0;
 }
