@@ -1,16 +1,16 @@
 #include<iostream>
 #include<iomanip>
 using namespace std;
-int main()
+int main()/*Just the formatted version of 2.1 practical*/
 {
     int enr_number,sem;
-    long long int mob_number;
+    long long int mob_number/*Have used _ type of variable so we have to use this only everywhere*/;
     string name,branch;
 
     cout<<"******************************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
     cout<<"******************************************\n";
-
+    /*In codeblocks, we have to use left right to set the widht of the text*/
     cout<<left<<setw(25)<<"Enter Enrollement Number"<<right<<setw(2)<<":";
     cin>>enr_number;
     cout<<left<<setw(25)<<"Enter Student Name"<<right<<setw(2)<<":";

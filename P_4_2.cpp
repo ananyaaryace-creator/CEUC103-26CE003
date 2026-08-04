@@ -3,11 +3,11 @@
 using namespace std;
 int main()
 {
-    int enrollement,semester;
+    int enr_number,sem;
     float Avg_marks,Percentage,maths_marks,physics_marks,cpf_marks,Total_marks;
-    long long int mobile;
+    long long int mob_number;
     string Name,Branch;
-
+    /*It include the grade and performance along with the result*/
     cout<<"*********************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
     cout<<"*********************************\n";
@@ -16,7 +16,7 @@ int main()
     cout<<"-----------------------------------\n";
 
     cout<<left<<setw(25)<<"Enter Enrollment Number"<<right<<setw(2)<<":";
-    cin>>enrollement;
+    cin>>enr_number;
     cout<<left<<setw(25)<<"Enter Student Name"<<right<<setw(2)<<":";
     getline(cin,Name);
     cin>>Name;
@@ -24,9 +24,9 @@ int main()
     cout<<left<<setw(25)<<"Enter Branch"<<right<<setw(2)<<":";
     cin>>Branch;
     cout<<left<<setw(25)<<"Enter Semester"<<right<<setw(2)<<":";
-    cin>>semester;
+    cin>>sem;
     cout<<left<<setw(25)<<"Enter Mobile Number"<<right<<setw(2)<<":";
-    cin>>mobile;
+    cin>>mob_number;
 
     cout<<"-----------------------------------\n";
     cout<<"Academic Information\n";
@@ -54,16 +54,16 @@ int main()
     cout<<"Student Information\n";
     cout<<"-----------------------------------\n";
 
-    cout<<left<<setw(25)<<"Enrollment Number"<<right<<setw(2)<<":"<<enrollement<<"\n";
+    cout<<left<<setw(25)<<"Enrollment Number"<<right<<setw(2)<<":"<<enr_number<<"\n";
     cout<<left<<setw(25)<<"Student Name"<<right<<setw(2)<<":"<<Name<<"\n";
     cout<<left<<setw(25)<<"Branch"<<right<<setw(2)<<":"<<Branch<<"\n";
-    cout<<left<<setw(25)<<"Semester"<<right<<setw(2)<<":"<<semester<<"\n";
-    cout<<left<<setw(25)<<"Mobile Number"<<right<<setw(2)<<":"<<mobile<<"\n";
+    cout<<left<<setw(25)<<"Semester"<<right<<setw(2)<<":"<<sem<<"\n";
+    cout<<left<<setw(25)<<"Mobile Number"<<right<<setw(2)<<":"<<mob_number<<"\n";
 
     cout<<"-----------------------------------\n";
     cout<<"Academic Result\n";
     cout<<"-----------------------------------\n";
-    if (Percentage>=40)
+    if (Percentage>=40)/*We can also use the switch case instead of if/else*/
     {
         cout<<left<<setw(13)<<"RESULT"<<right<<setw(2)<<":"<<"PASS"<<"\n";
     }
@@ -108,6 +108,6 @@ int main()
         cout<<left<<setw(13)<<"Grade"<<right<<setw(2)<<":"<<"F"<<"\n";
         cout<<left<<setw(13)<<"Peformance"<<right<<setw(2)<<":"<<"Failed"<<"\n";
     }
-
+    return 0;
 
 }
