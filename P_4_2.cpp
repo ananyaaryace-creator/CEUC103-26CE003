@@ -3,10 +3,10 @@
 using namespace std;
 int main()
 {
-    int enr_number,sem;
+    int sem;
     float Avg_marks,Percentage,maths_marks,physics_marks,cpf_marks,Total_marks;
     long long int mob_number;
-    string Name,Branch;
+    string Name,Branch,enr_number;
     /*It include the grade and performance along with the result*/
     cout<<"*********************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
@@ -17,10 +17,9 @@ int main()
 
     cout<<left<<setw(25)<<"Enter Enrollment Number"<<right<<setw(2)<<":";
     cin>>enr_number;
+    cin.ignore();
     cout<<left<<setw(25)<<"Enter Student Name"<<right<<setw(2)<<":";
     getline(cin,Name);
-    cin>>Name;
-    cin.ignore();
     cout<<left<<setw(25)<<"Enter Branch"<<right<<setw(2)<<":";
     cin>>Branch;
     cout<<left<<setw(25)<<"Enter Semester"<<right<<setw(2)<<":";

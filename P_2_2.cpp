@@ -3,9 +3,9 @@
 using namespace std;
 int main()/*Just the formatted version of 2.1 practical*/
 {
-    int enr_number,sem;
+    int sem;
     long long int mob_number/*Have used _ type of variable so we have to use this only everywhere*/;
-    string name,branch;
+    string enr_number,name,branch;
 
     cout<<"******************************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
@@ -13,10 +13,9 @@ int main()/*Just the formatted version of 2.1 practical*/
     /*In codeblocks, we have to use left right to set the widht of the text*/
     cout<<left<<setw(25)<<"Enter Enrollement Number"<<right<<setw(2)<<":";
     cin>>enr_number;
+    cin.ignore();
     cout<<left<<setw(25)<<"Enter Student Name"<<right<<setw(2)<<":";
     getline(cin,name);
-    cin.ignore();
-    cin>>name;
     cout<<left<<setw(25)<<"Enter Branch"<<right<<setw(2)<<":";
     cin>>branch;
     cout<<left<<setw(25)<<"Enter Semester"<<right<<setw(2)<<":";

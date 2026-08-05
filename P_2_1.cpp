@@ -1,10 +1,11 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 int main()/*If the code runs sucessfully it displays 0.If not it displays any non negative number.*/
 {
-    int enr_number,sem;
+    int sem;
     long long int mob_number;
-    string name,branch;
+    string enr_number,name,branch;
 
     cout<<"******************************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
@@ -12,10 +13,9 @@ int main()/*If the code runs sucessfully it displays 0.If not it displays any no
 
     cout<<"Enter Enrollement Number: ";
     cin>>enr_number;
+    cin.ignore()
     cout<<"Enter Student Name: "/*It is a string so to go in the next line we have to use getline and cin.ignore() both.*/;
     getline(cin,name);
-    cin.ignore();
-    cin>>name;
     cout<<"Enter Branch: ";
     cin>>branch;
     cout<<"Enter Semester: ";
