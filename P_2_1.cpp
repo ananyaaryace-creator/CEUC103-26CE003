@@ -13,7 +13,7 @@ int main()/*If the code runs sucessfully it displays 0.If not it displays any no
 
     cout<<"Enter Enrollement Number: ";
     cin>>enr_number;
-    cin.ignore()
+    cin.ignore();
     cout<<"Enter Student Name: "/*It is a string so to go in the next line we have to use getline and cin.ignore() both.*/;
     getline(cin,name);
     cout<<"Enter Branch: ";
