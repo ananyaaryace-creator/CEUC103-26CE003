@@ -85,7 +85,7 @@ int main()
                 cout<<"-----------------------------------\n";
 
 
-                Total_marks += marks;
+                Total_marks = 1+2+3;
                 cout<<left<<setw(25)<<"Total Marks"<<right<<setw(2)<<":"<<Total_marks<<"\n";
                 Avg_marks = ((Total_marks)/3);
                 cout<<left<<setw(25)<<"Average Marks"<<right<<setw(2)<<":"<<Avg_marks<<"\n";
