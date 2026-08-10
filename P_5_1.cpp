@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int sem,ch,no_sub,i,M;
+    int sem,ch,no_sub,i,M,p=0,q=0;
     float Avg_marks,Percentage,marks,maths_marks,physics_marks,cpf_marks,Total_marks;
     long long int mob_number;
     string Name,Branch,enr_number;
@@ -46,20 +46,27 @@ int main()
                 cout<<left<<setw(25)<<"Enter Mobile Number"<<right<<setw(2)<<":";
                 cin>>mob_number;
                 cout<<"Student Registered Successfully\n";
+                p=1;
 
                 goto M;
 
             case 2:
-                cout<<"-----------------------------------\n";
-                cout<<"Student Information\n";
-                cout<<"-----------------------------------\n";
+                if(p==0)
+                {
+                    cout<<"No Information\n";
+                }
+                else
+                {
+                    cout<<"-----------------------------------\n";
+                    cout<<"Student Information\n";
+                    cout<<"-----------------------------------\n";
 
-                cout<<left<<setw(25)<<"Enrollment Number"<<right<<setw(2)<<":"<<enr_number<<"\n";
-                cout<<left<<setw(25)<<"Student Name"<<right<<setw(2)<<":"<<Name<<"\n";
-                cout<<left<<setw(25)<<"Branch"<<right<<setw(2)<<":"<<Branch<<"\n";
-                cout<<left<<setw(25)<<"Semester"<<right<<setw(2)<<":"<<sem<<"\n";
-                cout<<left<<setw(25)<<"Mobile Number"<<right<<setw(2)<<":"<<mob_number<<"\n";
-
+                    cout<<left<<setw(25)<<"Enrollment Number"<<right<<setw(2)<<":"<<enr_number<<"\n";
+                    cout<<left<<setw(25)<<"Student Name"<<right<<setw(2)<<":"<<Name<<"\n";
+                    cout<<left<<setw(25)<<"Branch"<<right<<setw(2)<<":"<<Branch<<"\n";
+                    cout<<left<<setw(25)<<"Semester"<<right<<setw(2)<<":"<<sem<<"\n";
+                    cout<<left<<setw(25)<<"Mobile Number"<<right<<setw(2)<<":"<<mob_number<<"\n";
+                }
                 goto M;
 
             case 3:
@@ -70,22 +77,29 @@ int main()
                 cout<<"Enter Number Of Subjects: ";
                 cin>>no_sub;
 
+                Total_marks = 0 ;
+
                 for(i=1 ; i<= no_sub ; i++)
                 {
-                    cout<<"Enter Number Of Subject "<<i<<":";
+                    cout<<"Enter Number Of Subject "<<i<<right<<setw(2)<<":";
                     cin>>marks;
+                    Total_marks = Total_marks + marks;
                 }
-
+                q=1;
                 goto M;
 
             case 4:
-
+                if (q==0)
+                {
+                    cout<<"No Information\n";
+                    goto M;
+                }
+                else
+                {
                 cout<<"-----------------------------------\n";
                 cout<<"Academic Summary\n";
                 cout<<"-----------------------------------\n";
 
-
-                Total_marks = 1+2+3;
                 cout<<left<<setw(25)<<"Total Marks"<<right<<setw(2)<<":"<<Total_marks<<"\n";
                 Avg_marks = ((Total_marks)/3);
                 cout<<left<<setw(25)<<"Average Marks"<<right<<setw(2)<<":"<<Avg_marks<<"\n";
@@ -135,7 +149,8 @@ int main()
                 else
                 {
                     cout<<left<<setw(13)<<"Grade"<<right<<setw(2)<<":"<<"F"<<"\n";
-                    cout<<left<<setw(13)<<"Peformance"<<right<<setw(2)<<":"<<"Failed"<<"\n";
+                    cout<<left<<setw(13)<<"Performance"<<right<<setw(2)<<":"<<"Failed"<<"\n";
+                }
                 }
             case 5:
                 cout<<"Thank You...";
