@@ -1,3 +1,5 @@
+/*This practical consists the use of 'while and do while' loop in switch case 1.
+  Last updated on : 4 September 2026*/
 #include<iostream>
 #include<iomanip>
 using namespace std;
@@ -9,7 +11,6 @@ int main()
     string Name,Branch,enr_number;
     char choice;
 
-    /*It include the grade and performance along with the result*/
     cout<<"*********************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
     cout<<"*********************************\n";
@@ -35,7 +36,7 @@ int main()
                 cout<<"Student Registration\n";
                 cout<<"-----------------------------------\n";
 
-                do
+                do//This is used to register multiple students at a time//
                 {
                 cout<<left<<setw(25)<<"Enter Enrollment Number"<<right<<setw(2)<<":";
                 cin>>enr_number;

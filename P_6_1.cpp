@@ -1,3 +1,5 @@
+/*ONE DIMENSIONAL ARRAYS
+  Last updated on : 4 September 2026*/
 #include<iostream>
 #include<iomanip>
 using namespace std;
@@ -12,9 +14,11 @@ int main()
     cout<<left<<setw(28)<<"Enter number of participants"<<right<<setw(2)<<":";
     cin>>n;
 
+    //We use [n] hereas array, it changes as the value of i change in the loop//
     string part_ID[n],part_Name[n];
     float part_score[n];
 
+    //To register multiple participants//
     for(i=0;i<n;i++)
     {
         cout<<left<<setw(25)<<"Enter Participant Id"<<right<<setw(2)<<":";
@@ -27,7 +31,7 @@ int main()
     }
 
     float total_score=0,avg_score=0,lowest_score=part_score[0],highest_score=part_score[0];
-
+//Initializing the value of total_score and avg_score as zero to calculate the score properly//
     cout<<"--------------------------------------------------\n";
     cout<<"Participant Performance\n";
     cout<<"--------------------------------------------------\n";

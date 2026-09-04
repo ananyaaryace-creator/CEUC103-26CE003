@@ -1,9 +1,11 @@
+/*This practical contains the formatted and updated version of Practical 2.2
+  Last updated on : 4 September 2026*/
 #include<iostream>
-#include<iomanip>
+#include<iomanip>//When 'setw' is used in the code//
 using namespace std;
-int main()/*Just the formatted version of 2.1 practical*/
+int main()
 {
-    int sem;
+    short short int sem;
     long long int mob_number/*Have used _ type of variable so we have to use this only everywhere*/;
     string enr_number,name,branch;
 

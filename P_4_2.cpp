@@ -1,3 +1,5 @@
+/*This practical aims for 'else-if ladder' as an objective.
+  Last updated on : 4 September 2026*/
 #include<iostream>
 #include<iomanip>
 using namespace std;
@@ -70,6 +72,12 @@ int main()
     {
         cout<<left<<setw(13)<<"RESULT"<<right<<setw(2)<<"FAIL"<<"\n";
     }
+    /*Starting else-if ladder statement from here.
+      We use else if for all the possible outcomes as per the range of percentage
+
+      This practical is extended version of P_4_1 containing of grade and performance along with result.*/
+
+
     if (Percentage>=90)
     {
         cout<<left<<setw(13)<<"Grade"<<right<<setw(2)<<":"<<"O"<<"\n";
@@ -102,7 +110,7 @@ int main()
         cout<<left<<setw(13)<<"Grade"<<right<<setw(2)<<":"<<"C"<<"\n";
         cout<<left<<setw(13)<<"Performance"<<right<<setw(2)<<":"<<"Need Improvement"<<"\n";
     }
-    else
+    else //We do not need to write case as it is the last, so automatically percentage<40 is the case here.//
     {
         cout<<left<<setw(13)<<"Grade"<<right<<setw(2)<<":"<<"F"<<"\n";
         cout<<left<<setw(13)<<"Peformance"<<right<<setw(2)<<":"<<"Failed"<<"\n";

@@ -1,11 +1,12 @@
-/*Last edited : 10/08/26
- This file contains use of switch case along with if-else*/
+/*This file contains use of switch case along with if-else
+  Last edited : 4 September 2026*/
 #include<iostream>
 #include<iomanip>
 using namespace std;
 int main()
 {
-    int sem,ch,p=0,q=0;//We are taking two more variables p,q with value 0. So, it won't create an error if we directly use the case 2 or 4//
+    short short int sem,ch,p=0,q=0;/*We are taking two more variables p,q with value 0.
+                                     So, it won't create an error if we directly use the case 2 or 4*/
     float Avg_marks,Percentage,maths_marks,physics_marks,cpf_marks,Total_marks;
     long long int mob_number;
     string Name,Branch,enr_number,M;
@@ -15,13 +16,15 @@ int main()
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
     cout<<"*********************************\n";
 
-
+    //This is used to display all the options available//
     cout<<"------MAIN MENU------\n";
 
         cout<<" \n 1:Register New Student\n 2:Display Student Record\n 3:Enter Student Marks\n 4:Display Academic Result\n 5:Exit\n";
    M:   cout<<"Enter Your Choice : ";
         cin>>ch;
-
+/*  This practical also contains the use of 'goto' statement whenever required.
+    goto is used for the jump from one to another part of code after we run the code.
+    We are using 'M' as a variable to use goto statement whenever there is error after choosing a certain option*/
         if (ch<1||ch>5)
         {
             cout<<"Invalid option\n";

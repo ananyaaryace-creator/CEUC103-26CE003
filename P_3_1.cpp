@@ -1,13 +1,16 @@
+/*This practical is extended version of previous practicals. Along with student information, it accept marks of 3 subjects
+  as input and also calculate various mathematical operations. Then it also prints the academic summary.
+  Last Updated on : 4 September 2026*/
 #include<iostream>
-#include<iomanip>/*we have to include this to use getline the the code*/
+#include<iomanip>
 using namespace std;
 int main()
 {
-    int sem;
-    float Avg_marks,Percentage,maths_marks,physics_marks,cpf_marks,Total_marks;
+    short short int sem;
+    short float Avg_marks,Percentage,maths_marks,physics_marks,cpf_marks,Total_marks;
     long long int mob_number;
     string enr_number,Name,Branch;
-    /*Programs contains sub marks,total marks and percentage*/
+    //Programs contains sub marks,total marks,avg marks and percentage//
     cout<<"*********************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
     cout<<"*********************************\n";

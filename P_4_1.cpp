@@ -1,13 +1,15 @@
+/*This practical consists of 'if-else statement' as the main objective.
+  Last updated on : 4 September 2026*/
 #include<iostream>
 #include<iomanip>
 using namespace std;
 int main()
 {
-    int sem;
+    short short int sem;
     float Avg_marks,Percentage,maths_marks,physics_marks,cpf_marks,Total_marks;
     long long int mob_number;
     string enr_number,Name,Branch;
-    /*also includes the status pass/fail*/
+
     cout<<"*********************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
     cout<<"*********************************\n";
@@ -58,6 +60,8 @@ int main()
     cout<<left<<setw(25)<<"Branch"<<right<<setw(2)<<":"<<Branch<<"\n";
     cout<<left<<setw(25)<<"Semester"<<right<<setw(2)<<":"<<sem<<"\n";
     cout<<left<<setw(25)<<"Mobile Number"<<right<<setw(2)<<":"<<mob_number<<"\n";
+
+    //As and extended version of practical 3.1,It also consists of printing academic result i.e pass/fail//
 
     cout<<"-----------------------------------\n";
     cout<<"Academic Result\n";

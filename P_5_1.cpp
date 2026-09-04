@@ -1,14 +1,16 @@
+/*This practical consists of the use of 'for loop' in some cases of switch.
+  Last updated on : 4 September 2026*/
 #include<iostream>
 #include<iomanip>
 using namespace std;
 int main()
 {
-    int sem,ch,no_sub,i,M,p=0,q=0;
+    short short int sem,ch,no_sub,i,M,p=0,q=0;//We added a variable 'no_sub' as the number of subject will keep changing in this case//
     float Avg_marks,Percentage,marks,maths_marks,physics_marks,cpf_marks,Total_marks=0;
     long long int mob_number;
     string Name,Branch,enr_number;
 
-    /*It include the grade and performance along with the result*/
+
     cout<<"*********************************\n";
     cout<<"STUDENT RECORD MANAGEMENT SYSTEM\n";
     cout<<"*********************************\n";
@@ -78,10 +80,10 @@ int main()
 
                 cout<<"Enter Number Of Subjects: ";
                 cin>>no_sub;
-
+//Here we are using the for loop case for taking marks as input and also calculating total marks in hte loop itself.//
                 for(i=1 ; i<= no_sub ; i++)
                 {
-                    cout<<"Enter Number Of Subject "<<i<<":";
+                    cout<<"Enter Marks Of Subject "<<i<<":";
                     cin>>marks;
                     Total_marks=Total_marks+marks;
                     //We will calculate total marks here itself as for every loop marks will change and get added here only//
